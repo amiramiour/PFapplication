@@ -285,6 +285,38 @@ public class RecepieRepo {
                 .min(Comparator.comparingInt(recipe -> recipe.getPreparation().size()))
                 .orElse(null);
     }
+    /////details d'une recette
+    public String getRecipeDetails(String title) {
+        // Recherche de la recette par titre
+        List<Recepie> filteredRecipes = recipes.stream()
+                .filter(recipe -> recipe.getTitle().equalsIgnoreCase(title))
+                .collect(Collectors.toList());
+
+        // Si la recette est trouvée, récupérez ses détails sous forme de chaîne
+        if (!filteredRecipes.isEmpty()) {
+            Recepie recipe = filteredRecipes.get(0);
+            StringBuilder detailsBuilder = new StringBuilder();
+            detailsBuilder.append("Title: ").append(recipe.getTitle()).append("\n");
+            detailsBuilder.append("Ingredients:\n");
+            for (Ingredient ingredient : recipe.getIngredients()) {
+                detailsBuilder.append("- ").append(ingredient.getName())
+                        .append(": ").append(ingredient.getAmount())
+                        .append(" ").append(ingredient.getUnit()).append("\n");
+            }
+            detailsBuilder.append("\nPreparation:\n");
+            int stepNumber = 1;
+            for (String step : recipe.getPreparation()) {
+                detailsBuilder.append(stepNumber).append(". ").append(step).append("\n");
+                stepNumber++;
+            }
+            // Ajoutez d'autres détails si nécessaire
+            return detailsBuilder.toString();
+        } else {
+            // Si la recette n'est pas trouvée, retournez une chaîne indiquant qu'elle n'existe pas
+            return "Recipe not found.";
+        }
+    }
+
 
 
 

@@ -44,6 +44,21 @@ public class GraphModeController {
             e.printStackTrace();
         }
     }
+    @FXML
+    private Button nextButton;
+
+    // Méthode appelée lorsque le bouton backButton est cliqué
+    @FXML
+    public void onNextButtonClicked(ActionEvent event) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("details-receipe.fxml"));
+            Parent root = fxmlLoader.load();
+            Stage stage = (Stage) backButton.getScene().getWindow();
+            stage.setScene(new Scene(root));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     @FXML
     public void initialize() {
@@ -203,4 +218,5 @@ public class GraphModeController {
         // Afficher le résultat dans la zone de texte
         resultArea.setText(result);
     }
+
 }
