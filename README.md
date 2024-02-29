@@ -55,4 +55,4 @@ Les traitements disponibles dans l'application incluent :
 ## Remarques Supplémentaires
   L'application a été développée en utilisant Java et JavaFX pour l'interface graphique.
   Les dépendances nécessaires sont incluses dans le projet.
-  Pour toute question ou problème, veuillez nous contacter.
+  Pour toute question ou problème, veuillez me contacter.
