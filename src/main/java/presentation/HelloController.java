@@ -34,7 +34,7 @@ public class HelloController {
     private Button textButton;
 
     public HelloController() {
-        this.recipeRepo.init("C:\\Users\\CAP\\PFapplication\\src\\main\\java\\recipes.xml");
+        this.recipeRepo.init("C:\\Users\\CAP\\PFapplication\\src\\main\\java\\data\\recipes.xml");
     }
 
     @FXML

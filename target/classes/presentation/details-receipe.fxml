@@ -21,9 +21,9 @@
     <ChoiceBox fx:id="recipeTitlesBox" layoutX="37.0" layoutY="44.0" prefHeight="25.0" prefWidth="239.0" />
 
     <!-- Bouton pour afficher les détails de la recette sélectionnée -->
-    <Button fx:id="showDetailsButton" layoutX="167.0" layoutY="82.0" mnemonicParsing="false" onAction="#onShowDetailsClicked" text="afficher les détails" />
+    <Button fx:id="showDetailsButton" layoutX="167.0" layoutY="82.0" mnemonicParsing="false" onAction="#onShowDetailsClicked" text="Show details" />
 
     <!-- Zone de texte pour afficher les détails de la recette -->
     <TextArea fx:id="recipeDetailsArea" layoutX="39.0" layoutY="120.0" prefHeight="200.0" prefWidth="239.0" />
-    <Button fx:id="backButton" layoutX="39.0" layoutY="332.0" mnemonicParsing="false" onAction="#onBackButtonClicked" text="revenir" />
+    <Button fx:id="backButton" layoutX="39.0" layoutY="332.0" mnemonicParsing="false" onAction="#onBackButtonClicked" text="Back" />
 </AnchorPane>

@@ -30,7 +30,7 @@ public class DetailsReceipeController {
     public void initialize() {
         // Initialize RecepieRepo
         recepieRepo = new RecepieRepo();
-        recepieRepo.init("C:\\Users\\CAP\\PFapplication\\src\\main\\java\\recipes.xml");
+        recepieRepo.init("C:\\Users\\CAP\\PFapplication\\src\\main\\java\\data\\recipes.xml");
 
         // Populate ChoiceBox with recipe titles
         recipeTitlesBox.setItems(FXCollections.observableArrayList(recepieRepo.listRecipeTitles()));

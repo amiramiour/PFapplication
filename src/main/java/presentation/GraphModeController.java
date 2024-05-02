@@ -26,7 +26,7 @@ public class GraphModeController {
     @FXML
     private TextArea resultArea;
 
-    String filePath = "C:\\Users\\CAP\\PFapplication\\src\\main\\java\\recipes.xml";
+    String filePath = "C:\\Users\\CAP\\PFapplication\\src\\main\\java\\data\\recipes.xml";
     RecepieRepo recipeRepo;
 
     @FXML

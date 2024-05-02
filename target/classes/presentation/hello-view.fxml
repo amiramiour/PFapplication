@@ -50,7 +50,7 @@
          <Insets />
       </opaqueInsets>
    </Button>
-   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="49.0" layoutY="215.0" opacity="0.86" stroke="WHITE" text="Choose your dispal mode" wrappingWidth="396.0">
+   <Text fill="WHITE" fontSmoothingType="LCD" layoutX="49.0" layoutY="215.0" opacity="0.86" stroke="WHITE" text="Choose your display mode" wrappingWidth="396.0">
       <font>
          <Font name="Centaur" size="24.0" />
       </font>

@@ -20,7 +20,7 @@
             <Image url="@../images/bg.jpeg" />
         </image>
     </ImageView>
-    <Text fill="WHITE" fontSmoothingType="LCD" layoutX="134.0" layoutY="48.0" opacity="0.86" stroke="WHITE" text="Choisissez votre question " wrappingWidth="396.0">
+    <Text fill="WHITE" fontSmoothingType="LCD" layoutX="134.0" layoutY="48.0" opacity="0.86" stroke="WHITE" text="Choose Your Question" wrappingWidth="396.0">
         <font>
             <Font name="Centaur" size="36.0" />
         </font>
